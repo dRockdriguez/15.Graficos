@@ -1,0 +1,17 @@
+<div style="display: block">
+  <canvas baseChart
+              [data]="doughnutChartData"
+              [labels]="doughnutChartLabels"
+              [chartType]="doughnutChartType"
+              [colors]="lineChartColors"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"></canvas>
+
+              <br>
+              <br>
+              <button class="btn btn-outline-primary btn-block" (click)="randomNumeros()">
+                Random
+              </button>
+</div>
+<br>
+<br>

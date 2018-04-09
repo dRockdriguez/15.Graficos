@@ -3,14 +3,25 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { LineasComponent } from './components/lineas/lineas.component';
+
+import { ChartsModule } from 'ng2-charts';
+import { BarrasComponent } from './components/barras/barras.component';
+import { DonasComponent } from './components/donas/donas.component';
+import { RadarComponent } from './components/radar/radar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LineasComponent,
+    BarrasComponent,
+    DonasComponent,
+    RadarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ChartsModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

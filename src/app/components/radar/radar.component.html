@@ -1,0 +1,11 @@
+<div style="display: block">
+  <canvas baseChart
+          [datasets]="radarChartData"
+          [labels]="radarChartLabels"
+          [chartType]="radarChartType"
+          (chartHover)="chartHovered($event)"
+          [colors]="lineChartColors"
+          (chartClick)="chartClicked($event)"></canvas>
+</div>
+<br>
+<br>
